@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import getCurrentTime from './utils/get-current-time';
+import getClockConfig from './utils/get-clock-config';
+import getReadout from './utils/get-readout';
+import words from './words';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const now = getCurrentTime();
+	const clockConfig = getClockConfig(now);
+	const readoutConfig = getReadout(clockConfig);
+	const readout = words.filter((_, index) => readoutConfig[index]).join(' ');
+	console.log(now, clockConfig, readoutConfig, readout);
+	return <div>{readout}</div>;
+};
 
 export default App;
