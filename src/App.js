@@ -1,11 +1,11 @@
 import React from 'react';
-import getCurrentTime from './utils/get-current-time';
+import useClock from './utils/use-clock';
 import Clock from './Clock';
 import Readout from './Readout';
 import './styles.css';
 
 const App = () => {
-	const now = getCurrentTime();
+	const now = useClock();
 	return (
 		<div className="app">
 			<Clock time={now} />

@@ -14,7 +14,7 @@ const useClock = () => {
 			window.setTimeout(() => {
 				// on each second update the state time
 				const interval = window.setInterval(
-					() => setCurrentTime(getNow()),
+					() => setCurrentTime(getCurrentTime()),
 					1000
 				);
 
