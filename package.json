@@ -1,5 +1,6 @@
 {
 	"name": "neon-clock",
+	"homepage": "http://BenDMyers.github.io/Neon_Clock",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
@@ -12,7 +13,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -31,6 +34,7 @@
 	},
 	"devDependencies": {
 		"concurrently": "^4.1.2",
+		"gh-pages": "^2.1.1",
 		"less": "^3.10.3",
 		"less-watch-compiler": "^1.13.0"
 	}
