@@ -1,16 +1,17 @@
 import React from 'react';
 import getCurrentTime from './utils/get-current-time';
-import getClockConfig from './utils/get-clock-config';
-import getReadout from './utils/get-readout';
-import words from './words';
+import Clock from './Clock';
+import Readout from './Readout';
+import './styles.css';
 
 const App = () => {
 	const now = getCurrentTime();
-	const clockConfig = getClockConfig(now);
-	const readoutConfig = getReadout(clockConfig);
-	const readout = words.filter((_, index) => readoutConfig[index]).join(' ');
-	console.log(now, clockConfig, readoutConfig, readout);
-	return <div>{readout}</div>;
+	return (
+		<div className="app">
+			<Clock time={now} />
+			<Readout time={now} />
+		</div>
+	);
 };
 
 export default App;
