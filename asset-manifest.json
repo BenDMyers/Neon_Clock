@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Neon_Clock/static/css/main.0ed0232a.chunk.css",
+    "main.js": "/Neon_Clock/static/js/main.6cd819e6.chunk.js",
+    "main.js.map": "/Neon_Clock/static/js/main.6cd819e6.chunk.js.map",
+    "runtime~main.js": "/Neon_Clock/static/js/runtime~main.8332da42.js",
+    "runtime~main.js.map": "/Neon_Clock/static/js/runtime~main.8332da42.js.map",
+    "static/js/2.e9b68e0d.chunk.js": "/Neon_Clock/static/js/2.e9b68e0d.chunk.js",
+    "static/js/2.e9b68e0d.chunk.js.map": "/Neon_Clock/static/js/2.e9b68e0d.chunk.js.map",
+    "index.html": "/Neon_Clock/index.html",
+    "precache-manifest.cd7a90936827589eef1dba7424b88bde.js": "/Neon_Clock/precache-manifest.cd7a90936827589eef1dba7424b88bde.js",
+    "service-worker.js": "/Neon_Clock/service-worker.js",
+    "static/css/main.0ed0232a.chunk.css.map": "/Neon_Clock/static/css/main.0ed0232a.chunk.css.map"
+  }
+}
